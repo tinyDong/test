@@ -9,7 +9,7 @@ import java.util.function.Supplier;
 import java.util.stream.Collectors;
 
 public class Student {
-    String name;
+    private String name;
     double score;
 
     public Student(String name, double score) {
