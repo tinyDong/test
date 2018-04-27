@@ -1,5 +1,7 @@
 package main.Facade;
 
+import main.Exception.XDException;
+
 public class FacadeInvokeTemplate<T> {
     public static <T> ResponseDto<T> invoke(CallBack<T> callBack,String executeInfo){
         ResponseDto<T> response = new ResponseDto<T>();

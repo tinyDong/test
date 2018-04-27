@@ -1,4 +1,4 @@
-package main.Facade;
+package main.Exception;
 
 public class XDException extends RuntimeException{
     private static final long serialVersionUID = 3947231994724316271L;
