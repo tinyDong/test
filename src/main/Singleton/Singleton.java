@@ -1,29 +1,26 @@
 package main.Singleton;
 
-//public class main.Singleton {
-//    private static class SingletonHolder {
-//        private static final main.Singleton INSTANCE = new main.Singleton();
-//    }
-//    private main.Singleton (){}
-//    public static final main.Singleton getInstance() {
-//        return SingletonHolder.INSTANCE;
-//    }
-//}
+public class Singleton{
+    private static Singleton singleton;
 
-//public class main.Singleton {
-//    private static main.Singleton instance = new main.Singleton();
-//    private main.Singleton (){}
-//    public static main.Singleton getInstance() {
-//        return instance;
-//    }
-//}
+    public static Singleton getSingleton() {
+        if (singleton==null){
+            synchronized (Singleton.class){
+                if (singleton==null){
+                    singleton=new Singleton();
+                }
+            }
+        }
+        return singleton;
+    }
 
-//public class main.Singleton {
-//    private static class SingletonHolder {
-//        private static final main.Singleton INSTANCE = new main.Singleton();
-//    }
-//    private main.Singleton (){}
-//    public static final main.Singleton getInstance() {
-//        return SingletonHolder.INSTANCE;
-//    }
-//}
+    private Singleton(){}
+
+    private static class InnerClass{
+        private static Singleton instanc=new Singleton();
+    }
+
+    public static final Singleton getS1(){
+        return InnerClass.instanc;
+    }
+}
