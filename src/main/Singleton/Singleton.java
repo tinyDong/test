@@ -23,4 +23,8 @@ public class Singleton{
     public static final Singleton getS1(){
         return InnerClass.instanc;
     }
+
+    public static void main(String[] args) {
+
+    }
 }
