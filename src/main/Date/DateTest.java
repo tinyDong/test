@@ -19,6 +19,6 @@ public class DateTest {
         //第一种方法：使用new Timestamp(long)
         Timestamp t = new Timestamp(new Date().getTime());
         System.out.println(t);
-
+        System.out.println(t);
     }
 }
