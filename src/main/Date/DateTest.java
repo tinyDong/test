@@ -15,7 +15,7 @@ public class DateTest {
         System.out.println(da.getTime());
 
         //由日期date转换为timestamp
-
+        System.out.println("123123");
         //第一种方法：使用new Timestamp(long)
         Timestamp t = new Timestamp(new Date().getTime());
         System.out.println(t);
