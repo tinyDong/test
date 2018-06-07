@@ -1,4 +1,4 @@
-package main.Lambda;
+package main.java8.Lambda;
 
 import java.lang.reflect.Constructor;
 import java.lang.reflect.Field;

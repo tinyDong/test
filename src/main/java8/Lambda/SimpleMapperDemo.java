@@ -1,4 +1,4 @@
-package main.Lambda;
+package main.java8.Lambda;
 
 public class SimpleMapperDemo {
     static class Student {

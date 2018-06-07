@@ -1,20 +1,26 @@
-package main.Lambda;
+package main.java8.Lambda;
 
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 import java.util.function.Function;
 import java.util.function.Predicate;
-import java.util.function.Supplier;
-import java.util.stream.Collectors;
 
 public class Student {
     private String name;
-    double score;
+    private Integer score;
 
-    public Student(String name, double score) {
+    public Student(String name, Integer score) {
         this.name = name;
         this.score = score;
+    }
+
+    @Override
+    public String toString() {
+        return "Student{" +
+                "name='" + name + '\'' +
+                ", score=" + score +
+                '}';
     }
 
     public String getName() {
@@ -25,11 +31,11 @@ public class Student {
         this.name = name;
     }
 
-    public double getScore() {
+    public Integer getScore() {
         return score;
     }
 
-    public void setScore(double score) {
+    public void setScore(Integer score) {
         this.score = score;
     }
 
@@ -55,9 +61,9 @@ public class Student {
         return "Laoma School";
     }
     public static void main(String[] args) {
-        List<Student> students = Arrays.asList(new Student("zhangsan", 89d),
-                new Student("lisi", 89d),
-                new Student("wangwu", 98d));
+        List<Student> students = Arrays.asList(new Student("zhangsan", 89),
+                new Student("lisi", 89),
+                new Student("wangwu", 98));
 
 //        List<Student> above90=students.stream().filter(t->t.getScore()>90).collect(Collectors.toList());
 //
