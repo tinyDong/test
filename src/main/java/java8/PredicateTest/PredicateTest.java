@@ -1,5 +1,5 @@
 package java8.PredicateTest;
-import reflect.User;
+import designModel.reflect.User;
 
 import java.util.Arrays;
 import java.util.List;
