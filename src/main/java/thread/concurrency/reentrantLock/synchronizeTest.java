@@ -18,7 +18,7 @@ public class synchronizeTest {
         Thread t2=new Thread(new Runnable() {
             @Override
             public void run() {
-//               test.test2();
+//               promptOptimize.test.test2();
             }
         });
 

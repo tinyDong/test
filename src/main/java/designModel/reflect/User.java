@@ -7,6 +7,12 @@ public class User {
     public static void test1(){
         System.out.println(1);
     }
+    public User() {
+    }
+    public User(String name, Integer age) {
+        this.name = name;
+        this.age = age;
+    }
 
     public void setName(String name) {
         this.name = name;
